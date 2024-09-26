@@ -1,3 +1,4 @@
+index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +8,116 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f0f0f0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 86, 179, 0.9);
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+            border-radius: 5px;
+            color: #fff;
+        }
+
         nav a.active {
             background-color: #0056b3; /* Darker shade of blue */
             padding: 8px 16px;
             border-radius: 5px;
             color: #fff; /* White text color */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://i.pinimg.com/736x/84/70/94/847094a5d2df67f4fc7a7a6b77bcfe7b.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: whitesmoke ;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Virtual Tour Section */
+        .interactive-frame {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .interactive-frame h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+
+        iframe {
+            width: 80%;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0056b3;
+            color: white;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -36,7 +142,8 @@
     
     <section class="interactive-frame">
         <h2>Virtual Tour</h2>
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Mf_nGEPIsQ8?si=Nqw5f0kGe4CQDeNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
     </section>
     
     <footer>
@@ -44,4 +151,3 @@
     </footer>
 </body>
 </html>
-
